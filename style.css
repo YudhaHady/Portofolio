@@ -1,0 +1,598 @@
+@import url("https:/fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+/* ================== Home ================== */
+section {
+	padding: 100px;
+}
+.banner {
+	position: relative;
+	min-height: 100vh;
+	max-width: 100%;
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 50%), url(assets/banner3.jpg);
+	object-fit: cover;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.banner h2 {
+	font-size: 3em;
+	color: #fff;
+	font-weight: 500;
+	line-height: 1.2em;
+}
+
+.banner h2 span {
+	font-size: 1.5em;
+	font-weight: 700;
+}
+
+.banner h3 {
+	font-size: 1.5em;
+	color: #fff;
+	font-weight: 500;
+}
+.btn {
+	position: relative;
+	background: #303030;
+	display: inline-block;
+	color: #fff;
+	margin-top: 20px;
+	/* margin-left: 10px; */
+	padding: 10px 20px;
+	font-size: 18px;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 2px;
+	font-weight: 500;
+	border-radius: 20px;
+}
+
+/* Akhir Home */
+
+/* ================== Navbar ================== */
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 40px 100px;
+	z-index: 1000;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: 0.5s;
+}
+
+/* ================== navbar Javascript ================== */
+header.sticky {
+	background: #fff;
+	padding: 30px 100px;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+header.sticky .logo {
+	color: #111;
+}
+
+header.sticky ul li a {
+	color: #111;
+}
+
+header.sticky ul li a::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: #111;
+	transform-origin: bottom right;
+	transition: transform 0.25s ease-out;
+}
+
+header.sticky ul li a:hover::after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+}
+/* ================== navbar Javascript ================== */
+
+header .logo {
+	color: #fff;
+	font-size: 24px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 700;
+	letter-spacing: 5px;
+}
+
+header ul {
+	position: relative;
+	display: flex;
+}
+
+header ul li {
+	position: relative;
+	list-style: none;
+}
+
+header ul li a {
+	position: relative;
+	display: inline-block;
+	color: #fff;
+	margin: 0 20px;
+	text-decoration: none;
+	font-weight: 700;
+}
+header ul li a::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: #fff;
+	transform-origin: bottom right;
+	transition: transform 0.25s ease-out;
+}
+
+header ul li a:hover::after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+}
+
+/* ================== Akhir Navbar ================== */
+
+/* ================== About Me ================== */
+.about {
+}
+
+.heading {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 20px;
+	color: #111;
+}
+.heading h2 {
+	font-weight: 800;
+	font-size: 30px;
+	padding-bottom: 20px;
+}
+.about .contentBox {
+	padding-right: 150px;
+	padding-left: 200px;
+}
+
+.contentBox h3 {
+	font-size: 1.5em;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.contentBox p {
+	text-align: justify;
+}
+
+.content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.w50 {
+	min-width: 30%;
+	margin: auto;
+	float: right;
+	background-position-x: 100px;
+	/* justify-content: space-evenly; */
+}
+.w50 img {
+	max-width: 99%;
+	border-radius: 20px;
+	height: 300px;
+	animation: foto 3s ease infinite;
+}
+
+@keyframes foto {
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(20px);
+	}
+}
+
+/* .w50 img:hover {
+	box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.5);
+	transition: 0.5s;
+	max-width: 100%;
+	max-height: 100%;
+} */
+/* ================== Akhir About ================== */
+
+/* ================== Services ================== */
+.services {
+	background: #111;
+}
+
+.heading.white {
+	color: #fff;
+	padding: 0px 150px;
+}
+
+.heading.white h2 {
+	padding-bottom: 20px;
+}
+
+.services .content {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+.services .content .servicesBox {
+	padding: 40px 20px;
+	/* background: #444; */
+	color: #fff;
+	max-width: 360px;
+	margin: 10px;
+	text-align: center;
+	transition: 0.5s;
+	background: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(20px);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 10px;
+}
+.services .content .servicesBox h2 {
+	padding: 10px;
+	font-size: 20px;
+	font-weight: 600;
+}
+.services .content .servicesBox p {
+	text-align: center;
+}
+.services .content .servicesBox img {
+	max-width: 80px;
+	filter: invert(1);
+}
+.services .content .servicesBox:hover {
+	background: #999999;
+}
+/* ================== Akhir Services ================== */
+
+/*  ================== Project ================== */
+.project .content {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.project .content .projectBox {
+	width: 50%;
+	padding: 20px;
+}
+.project .content .textProjectBox {
+	margin: auto;
+	padding: 50px;
+}
+
+.project .content .projectBox img {
+	max-width: 99%;
+	border-radius: 20px;
+	height: 99%;
+	transition: all 300ms ease-in-out;
+}
+
+.project .content .projectBox img:hover {
+	box-shadow: 10px 10px 38px 14px rgba(0, 0, 0, 0.5);
+	transition: 0.5s;
+	max-height: 100%;
+	height: 100%;
+}
+
+/* ================== Contact ================== */
+.contact {
+	background: #111;
+	padding: 50px 50px 20px 50px;
+}
+.contact .heading {
+	color: #fff;
+	padding-bottom: 30px;
+}
+.formBox {
+	min-width: 50%;
+}
+.formBox form {
+	display: flex;
+	flex-direction: column;
+}
+
+.formBox form h3,
+.contactInfo h3 {
+	color: #fff;
+	font-size: 20px;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+
+.formBox form input,
+.formBox form textarea {
+	margin-bottom: 20px;
+	padding: 15px;
+	font-size: 16px;
+	background: #444;
+	border: none;
+	outline: none;
+	resize: none;
+	color: #fff;
+}
+
+.formBox form textarea {
+	min-height: 100px;
+}
+
+.formBox input::placeholder,
+.formBox textarea::placeholder {
+	color: #999;
+}
+
+.formBox form input[type="submit"] {
+	letter-spacing: 2px;
+}
+
+.contact {
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) 50%), url(assets/footer.jpg);
+	background-position: bottom;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.contactInfo {
+	min-width: 50%;
+}
+
+.contactInfoBox {
+	position: relative;
+}
+
+.contactInfoBox .box {
+	position: relative;
+	padding: 20px 0px;
+	display: flex;
+}
+.contactInfoBox .box .icon {
+	min-width: 10%;
+	padding-top: 4px;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 24px;
+}
+.contactInfoBox .box .text {
+	display: flex;
+	margin-left: 20px;
+	font-size: 16px;
+	color: #fff;
+	flex-direction: column;
+	font-weight: 300;
+}
+
+.contactInfoBox .box .text h3 {
+	font-weight: 500;
+	color: dodgerblue;
+	margin-bottom: 0;
+}
+
+.copyright {
+	color: #fff;
+	text-align: center;
+	font-size: 12px;
+	margin: 10px 0;
+	/* padding-top: 50px; */
+}
+
+.social {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	position: relative;
+	font-size: 30px;
+	margin-left: 20px;
+}
+
+.social .icon-social a {
+	color: #fff;
+	margin-right: 20px;
+	text-decoration: none;
+}
+
+.social .icon-social :active {
+	color: grey;
+}
+
+/* ================== Responsive ================= */
+
+@media (max-width: 910px) {
+	header,
+	header.sticky {
+		padding: 25px 50px;
+		z-index: 1000;
+		width: 100%;
+	}
+
+	.banner {
+		/* position: fixed; */
+	}
+
+	.menu {
+		position: absolute;
+		top: 75px;
+		left: -100%;
+		display: block;
+		padding: 100px 50px;
+		text-align: center;
+		width: 100%;
+		height: 100vh;
+		background: #fff;
+		transition: 0.5s;
+		z-index: 999;
+		border-top: 1px solid rgba(0, 0, 0, 0.2);
+		background: #ffffff10;
+		backdrop-filter: blur(12px);
+		-webkit-backdrop-filter: blur(12px);
+		margin-top: 15px;
+	}
+	header ul li a {
+		color: #111;
+		font-size: 24px;
+		margin: 10px;
+	}
+
+	.menu.active {
+		left: 0;
+		background: rgba(255, 255, 255, 0.25);
+		box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+		backdrop-filter: blur(5px);
+		-webkit-backdrop-filter: blur(5px);
+		border-radius: 10px;
+		border: 1px solid rgba(255, 255, 255, 0.18);
+	}
+
+	.sticky .menu.active {
+		left: 0;
+		background: rgba(255, 255, 255, 0.25);
+		box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+		backdrop-filter: blur(5px);
+		-webkit-backdrop-filter: blur(5px);
+		border-radius: 10px;
+		border: 1px solid rgba(255, 255, 255, 0.18);
+		margin-top: 15px;
+	}
+	.toggle {
+		width: 40px;
+		height: 40px;
+		background: url(assets/menu.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 30px;
+		cursor: pointer;
+		transition: 0.5s;
+	}
+	.toggle.active {
+		background: url(assets/close.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 25px;
+		cursor: pointer;
+		transition: 0.5s;
+	}
+
+	header.sticky .toggle {
+		filter: invert(1);
+	}
+
+	section {
+		padding: 100px 50px;
+	}
+	.banner {
+		padding: 150px 50px 100px;
+	}
+	.banner h2 {
+		font-size: 1.5em;
+	}
+
+	.banner h3 {
+		font-size: 1em;
+	}
+
+	.btn {
+		margin-top: 10px;
+		padding: 10px 20px;
+		font-size: 16px;
+	}
+	.heading {
+		margin-bottom: 10px;
+	}
+	.heading h2 {
+		font-weight: 800;
+		font-size: 24px;
+	}
+
+	.about .contentBox {
+		flex-direction: column;
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+
+	/* .contentBox p {
+		display:contents;
+	} */
+
+	.content {
+		flex-direction: column;
+		/* text-align: justify; */
+	}
+	.w50 {
+		margin: auto;
+	}
+
+	.heading.white {
+		padding: 0 20px;
+		margin-bottom: 20px;
+	}
+
+	.services .content .servicesBox {
+		margin: 10px;
+	}
+
+	.project .content .projectBox {
+		width: 100%;
+		padding: 10px;
+	}
+
+	.contact .content .formBox {
+		margin-top: 50px;
+	}
+
+	.contact .contactInfo h3 {
+		font-weight: 600;
+	}
+
+	.copyright {
+		margin: 10px 0 0px 0px;
+	}
+	.social {
+		justify-content: space-evenly;
+	}
+}
+
+/* Active scroll bar */
+
+/* ScrollBar	 */
+::-webkit-scrollbar {
+	width: 0.5rem;
+	background: azure;
+}
+
+::-webkit-scrollbar-thumb {
+	background: hsl(228, 4%, 53%);
+	border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb:active {
+	background: hsl(228, 4%, 40%);
+	border-radius: 0.5rem;
+}
