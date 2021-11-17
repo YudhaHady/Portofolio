@@ -557,7 +557,14 @@ header ul li a:hover::after {
 	.services .content .servicesBox {
 		margin: 10px;
 	}
-
+	.project .content {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		align-content: center;
+		flex-direction: column;
+	}
+	
 	.project .content .projectBox {
 		width: 100%;
 		padding: 10px;
