@@ -566,7 +566,7 @@ header ul li a:hover::after {
 	}
 	
 	.project .content .projectBox {
-		width: 100%;
+		width: 50%;
 		padding: 10px;
 	}
 
