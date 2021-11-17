@@ -584,6 +584,10 @@ header ul li a:hover::after {
 	.social {
 		justify-content: space-evenly;
 	}
+	.content .contactInfoBox .box .text p {
+		text-decoration: none;
+		color: #fff;
+	}
 }
 
 /* Active scroll bar */
