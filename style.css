@@ -566,8 +566,8 @@ header ul li a:hover::after {
 	}
 	
 	.project .content .projectBox {
-		width: 50%;
-		height: 50%;
+		width: 100%;
+		height: 100%;
 		padding: 10px;
 	}
 
@@ -587,7 +587,7 @@ header ul li a:hover::after {
 	}
 	.content .contactInfoBox .box .text p {
 		text-decoration: none;
-		color: #fff;
+		color: inherit;
 	}
 }
 
